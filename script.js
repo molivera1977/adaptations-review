@@ -15,7 +15,7 @@ const REVIEW_OPEN   = true;    // OPEN 11/17 22:1x (Marcos: "open the review"). 
    teacher pin"). On these dates (New York time) the review is closed to students; the Teacher PIN
    opens it on THIS computer for the rest of the day. Keep the same list in the front door
    (class-portal/animal-adaptations/index.html). */
-const TEST_DAYS     = ['2026-11-20'];   // Marcos 11/17: test Fri 11/20; keep the same as class-portal/animal-adaptations/index.html
+const TEST_DAYS     = ['2026-11-19'];   // Marcos 11/18: test moved to Thu 11/19 (was Fri 11/20); keep the same as class-portal/animal-adaptations/index.html
 const UNLOCK_KEY    = 'aa_review_unlock_v1';   // = today's date once the Teacher PIN opened it here
 function todayNY() { return new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' }); }
 function isTestDayLocked() {
