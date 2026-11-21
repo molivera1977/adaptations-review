@@ -1514,6 +1514,9 @@ const app = {
       this.streak = 0;
       this.missedQuestions.push({ id: q.id, q: plainText(q.q), skill: (window.SKILLS || {})[q.id], yourAnswer: picked, correct: rightText });
     }
+    // 📍 Right Now on the dashboard (Marcos 11/20: "Yes, add it" — the reading review/test that every new unit is copied
+    // from): every answer rides in the log, right or missed, so the teacher sees a ✓ / ✗ box per question. One try each.
+    logEvent('answer', { id: q.id, ok: correct });
 
     document.querySelectorAll('.answer-btn').forEach((btn, i) => {
       btn.disabled = true;
